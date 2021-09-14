@@ -166,13 +166,3 @@ idance .timetable {
 .idance .schedule .tab-pane {
     padding-top: 10px;
 }
-
-.btn-primary {
-    background: #3fbbc0;
-    border: #3fbbc0;
-}
-
-.btn-primary:hover {
-    background: #65c9cd;
-    color: #fff;
-}
