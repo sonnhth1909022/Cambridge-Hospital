@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------
+# Centre Hero Section
+--------------------------------------------------------------*/
+
+#centrehero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/centre.jpg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -200px;
+}
+
+#centrehero .container {
+    position: relative;
+}
+
+#centrehero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #2c4964;
+}
+
+#centrehero h2 {
+    color: #2c4964;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+    #centrehero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 992px) {
+    #centrehero {
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    #centrehero .container {
+        padding-bottom: 63px;
+    }
+    #centrehero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #centrehero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-height: 500px) {
+    #centrehero {
+        height: auto;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+
+.why-us .content {
+    padding: 30px;
+    background: #3fbbc0;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.why-us .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.why-us .content p {
+    margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+    font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+    color: #3fbbc0;
+    background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+}
+
+.why-us .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #3fbbc0;
+    margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+    font-size: 15px;
+    color: #848484;
+}
+
+
+/*--------------------------------------------------------------
+# Side Menu
+--------------------------------------------------------------*/
+
+.centremenu {
+    overflow: hidden;
+}
+
+.centremenu .nav-tabs {
+    border: 0;
+}
+
+.centremenu .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #2f3133;
+    border-radius: 0;
+    border-right: 2px solid #ebf1f6;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.centremenu .nav-link:hover {
+    color: #3fbbc0;
+}
+
+.centremenu .nav-link.active {
+    color: #3fbbc0;
+    border-color: #3fbbc0;
+}
+
+.centremenu .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.centremenu .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c4964;
+}
+
+.centremenu .details p {
+    color: #777777;
+}
+
+.centremenu .details p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .centremenu .nav-link {
+        border: 0;
+        padding: 15px;
+    }
+    .centremenu .nav-link.active {
+        color: #fff;
+        background: #3fbbc0;
+    }
+}
