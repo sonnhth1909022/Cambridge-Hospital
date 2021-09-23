@@ -27,6 +27,21 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .page-link {
+            color: #65c9cd;
+            font-size: medium;
+        }
+        
+        .page-link:hover {
+            color: #65c9cd;
+        }
+        
+        .page-item.active .page-link {
+            background-color: #3fbbc0;
+            border-color: #3fbbc0;
+        }
+    </style>
 
     <!-- =======================================================
   * Template Name: Medicio - v2.1.1
@@ -83,7 +98,7 @@
             </nav>
             <!-- .nav-menu -->
 
-            <a href="appointment.html" class="appointment-btn scrollto">Book now</a>
+            <a href="pricing.html" class="appointment-btn scrollto">Book now</a>
 
         </div>
     </header>
@@ -107,99 +122,13 @@
         </section>
         <!-- End Breadcrumbs Section -->
 
-        <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Pricing</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="box" data-aos="fade-up" data-aos-delay="100">
-                            <h3>Regular</h3>
-                            <h4><sup>$</sup>5<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li class="na">Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-                        <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-                            <h3>Premium</h3>
-                            <h4><sup>$</sup>19<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                        <div class="box" data-aos="fade-up" data-aos-delay="300">
-                            <h3>VIP</h3>
-                            <h4><sup>$</sup>29<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                        <div class="box" data-aos="fade-up" data-aos-delay="400">
-                            <span class="advanced">Advanced</span>
-                            <h3>Ultimate</h3>
-                            <h4><sup>$</sup>49<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Pricing Section -->
 
         <!-- ======= Appointment Section ======= -->
         <section id="appointment" class="appointment section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Make an Appointment</h2>
+                    <h2>Book an Appointment</h2>
                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
                         quidem hic quas.</p>
                 </div>
@@ -267,12 +196,192 @@
                         <div class="error-message"></div>
                         <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
                     </div>
-                    <div class="text-center"><button type="submit">Make an Appointment</button></div>
+                    <div class="text-center"><button type="submit">Send Now</button></div>
                 </form>
 
             </div>
         </section>
         <!-- End Appointment Section -->
+
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Pricing</h2>
+                    <p>This is the price list of all the services we currently have. Prices for individual service could be changed according to company's new policies and the time new price is officially applied will be displayed at the
+                        <t style="font-weight: bold;">#Last Updated</t> column. There is no hiding between us and our patients. All are written on the list for customer clearance.</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Service Name</th>
+                            <th scope="col">Price (Adult)</th>
+                            <th scope="col">Price (Children)</th>
+                            <th scope="col">Session</th>
+                            <th scope="col">#Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Full Health Checkup</td>
+                            <td>$50</td>
+                            <td>$30</td>
+                            <td>1 Session</td>
+                            <td>20/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Blood Test</td>
+                            <td>$60</td>
+                            <td>$35</td>
+                            <td>1 Session</td>
+                            <td>22/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Full Test</td>
+                            <td>$65</td>
+                            <td>$40</td>
+                            <td>2 Sessions</td>
+                            <td>30/5/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Endoscopic Ultrasound</td>
+                            <td>$40</td>
+                            <td></td>
+                            <td>1 Session</td>
+                            <td>29/7/2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Electrocardiogram</td>
+                            <td>$55</td>
+                            <td></td>
+                            <td>3 Sessions</td>
+                            <td>5/6/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Cardiology</td>
+                            <td>$50</td>
+                            <td>$30</td>
+                            <td>1 Session</td>
+                            <td>20/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Health Checkup (Half)</td>
+                            <td>$35</td>
+                            <td>$20</td>
+                            <td>1 Session</td>
+                            <td>25/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Neurology</td>
+                            <td>$50</td>
+                            <td>$30</td>
+                            <td>1 Session</td>
+                            <td>20/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Pediatrics</td>
+                            <td>$200</td>
+                            <td></td>
+                            <td>10 Sessions</td>
+                            <td>20/9/2019</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Hepatology</td>
+                            <td>$50</td>
+                            <td></td>
+                            <td>1 Session</td>
+                            <td>20/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Kidney Surgery</td>
+                            <td>$300</td>
+                            <td>$160</td>
+                            <td>7 Sessions</td>
+                            <td>20/10/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Heart Surgery</td>
+                            <td>$300</td>
+                            <td>$160</td>
+                            <td>7 Sessions</td>
+                            <td>20/10/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Blood cancer Treatment</td>
+                            <td>$2000</td>
+                            <td>$1000</td>
+                            <td>1 Month</td>
+                            <td>20/9/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Breast Cancer Treatment</td>
+                            <td>$2100</td>
+                            <td></td>
+                            <td>1 Month</td>
+                            <td>23/4/2020</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Lung Cancer Treatment</td>
+                            <td>$2100</td>
+                            <td>$1100</td>
+                            <td>1 Month</td>
+                            <td>20/8/2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Plastic Surgery</td>
+                            <td>$10000</td>
+                            <td></td>
+                            <td>2 Months</td>
+                            <td>28/8/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item active">
+                            <span class="page-link">
+                          1
+                          <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+        <!-- End Pricing Section -->
 
         <!-- ======= Frequently Asked Questioins Section ======= -->
         <section id="faq" class="faq section-bg">
