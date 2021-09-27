@@ -1,11 +1,3 @@
-/**
-* Template Name: Medicio - v2.1.1
-* Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1646,6 +1638,118 @@ section {
 
 
 /*--------------------------------------------------------------
+# Doctor list section
+--------------------------------------------------------------*/
+
+.doctorlist .box {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.doctorlist h3 {
+    font-weight: 400;
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #777777;
+    background: #f8f8f8;
+}
+
+.doctorlist h4 {
+    font-size: 36px;
+    color: #3fbbc0;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.doctorlist h4 sup {
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+}
+
+.doctorlist h4 span {
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.doctorlist ul {
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.doctorlist ul li {
+    padding-bottom: 16px;
+}
+
+.doctorlist ul i {
+    color: #3fbbc0;
+    font-size: 18px;
+    padding-right: 4px;
+}
+
+.doctorlist ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.doctorlist .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.doctorlist .btn-buy {
+    background: #3fbbc0;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.doctorlist .btn-buy:hover {
+    background: #65c9cd;
+}
+
+.doctorlist .featured h3 {
+    color: #fff;
+    background: #3fbbc0;
+}
+
+.doctorlist .advanced {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #3fbbc0;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
 # Frequently Asked Questioins
 --------------------------------------------------------------*/
 
@@ -1679,7 +1783,7 @@ section {
 
 .faq .faq-list p {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .faq .faq-list a.collapse {
@@ -2161,4 +2265,10 @@ section {
 .btn-primary:hover {
     background: #65c9cd;
     color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background: #3fbbc0;
+    border: #3fbbc0;
 }

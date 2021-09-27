@@ -63,6 +63,70 @@
 
 
 /*--------------------------------------------------------------
+# Centre Hero 2 Section
+--------------------------------------------------------------*/
+
+#centrehero2 {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/centre2.jpg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -200px;
+}
+
+#centrehero2 .container {
+    position: relative;
+}
+
+#centrehero2 h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #2c4964;
+}
+
+#centrehero2 h2 {
+    color: #2c4964;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+    #centrehero2 {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 992px) {
+    #centrehero2 {
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    #centrehero2 .container {
+        padding-bottom: 63px;
+    }
+    #centrehero2 h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #centrehero2 h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-height: 500px) {
+    #centrehero2 {
+        height: auto;
+    }
+}
+
+
+/*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 

@@ -1,70 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="hoangson/login/fonts/icomoon/style.css">
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="hoangson/login/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="hoangson/login/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="hoangson/login/css/style.css">
+
+    <title>Cambridge Hospital - Login</title>
 </head>
 
 <body>
 
-    <div class="main">
 
-        <!-- Sign in  Form -->
-        <section class="sign-in">
+    <div class="d-md-flex half">
+        <div class="bg" style="background-image: url('images/login.jpg');"></div>
+        <div class="contents">
+
             <div class="container">
-                <div class="signin-content">
-                    <div class="signin-image">
-                        <figure><img src="images/signin.jpg" alt="sing up image"></figure>
-                        <a href="signup.html" class="signup-image-link">Create an account</a>
-                    </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="form-block mx-auto">
+                            <div class="text-center mb-5">
+                                <h3 class="text-uppercase"><img src="assets/img/logo.png">&nbsp Login</h3>
+                            </div>
+                            <form action="userprofile.html" method="post">
+                                <div class="form-group first">
+                                    <label for="email">Email/ Username</label>
+                                    <input type="email" class="form-control" placeholder="Your email/ username" id="email">
+                                </div>
+                                <div class="form-group last mb-3">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" placeholder="Your Password" id="password">
+                                </div>
 
-                    <div class="signin-form">
-                        <h2 class="form-title">Sign in</h2>
-                        <form method="POST" class="register-form" id="login-form">
-                            <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Name" />
-                            </div>
-                            <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
-                            </div>
-                        </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
+                                <div class="d-sm-flex mb-5 align-items-center">
+                                    <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                                </div>
+
+                                <input type="submit" value="Log In" class="btn btn-block py-2 btn-primary">
+
+                                <span class="ml-auto text-center my-3 d-block">New member ? <a href="signup.html" style="font-size: large;">Sign Up</a></span>
+
+                                <span class="text-center my-3 d-block">or</span>
+
+
+                                <div class="">
+
+                                    <div class="align-items-center">
+
+
+                                        <a href="#" class="btn btn-block py-2 btn-facebook">
+                                            <span class="icon-facebook mr-3"></span> Login with facebook
+                                        </a>
+                                        <a href="#" class="btn btn-block py-2 btn-google"><span class="icon-google mr-3"></span> Login with Google</a>
+                                    </div>
+
+
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
 
     </div>
 
-    <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+
+
+    <script src="hoangson/login/js/jquery-3.3.1.min.js"></script>
+    <script src="hoangson/login/js/popper.min.js"></script>
+    <script src="hoangson/login/js/bootstrap.min.js"></script>
+    <script src="hoangson/login/js/main.js"></script>
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
