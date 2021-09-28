@@ -17,6 +17,12 @@
     <!-- Style -->
     <link rel="stylesheet" href="hoangson/login/css/style.css">
 
+    <style>
+        .invalid-feedback {
+            font-size: 15px;
+        }
+    </style>
+
     <title>Cambridge Hospital - Login</title>
 </head>
 
@@ -34,14 +40,20 @@
                             <div class="text-center mb-5">
                                 <h3 class="text-uppercase"><img src="assets/img/logo.png">&nbsp Login</h3>
                             </div>
-                            <form action="userprofile.html" method="post">
+                            <form class="needs-validation" action="userprofile.html" method="post" novalidate>
                                 <div class="form-group first">
-                                    <label for="email">Email/ Username</label>
-                                    <input type="email" class="form-control" placeholder="Your email/ username" id="email">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="Your email: example@gmail.com" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your email.
+                                    </div>
                                 </div>
                                 <div class="form-group last mb-3">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" placeholder="Your Password" id="password">
+                                    <input type="password" class="form-control" placeholder="Your Password" id="password" required>
+                                    <div class="invalid-feedback">
+                                        You need a password to login.
+                                    </div>
                                 </div>
 
                                 <div class="d-sm-flex mb-5 align-items-center">
@@ -64,10 +76,10 @@
                                     <div class="align-items-center">
 
 
-                                        <a href="#" class="btn btn-block py-2 btn-facebook">
+                                        <a href="https://www.facebook.com/login.php" class="btn btn-block py-2 btn-facebook">
                                             <span class="icon-facebook mr-3"></span> Login with facebook
                                         </a>
-                                        <a href="#" class="btn btn-block py-2 btn-google"><span class="icon-google mr-3"></span> Login with Google</a>
+                                        <a href="https://accounts.google.com/" class="btn btn-block py-2 btn-google"><span class="icon-google mr-3"></span> Login with Google</a>
                                     </div>
 
 
@@ -88,6 +100,23 @@
     <script src="hoangson/login/js/popper.min.js"></script>
     <script src="hoangson/login/js/bootstrap.min.js"></script>
     <script src="hoangson/login/js/main.js"></script>
+    <script>
+        (function() {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>

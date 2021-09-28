@@ -16,8 +16,13 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="hoangson/login/css/style.css">
+    <style>
+        .invalid-feedback {
+            font-size: 15px;
+        }
+    </style>
 
-    <title>Cambridge Hospital - Login</title>
+    <title>Cambridge Hospital - Sign Up</title>
 </head>
 
 <body>
@@ -34,23 +39,28 @@
                             <div class="text-center mb-5">
                                 <h3 class="text-uppercase"><img src="assets/img/logo.png">&nbsp Sign Up</h3>
                             </div>
-                            <form action="#" method="post">
+                            <form class="needs-validation" action="userprofile.html" method="post" novalidate>
                                 <div class="form-group first">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" placeholder="youremail@gmail.com" id="email">
-                                </div>
-                                <div class="form-group first">
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" placeholder="Your Username" id="username">
+                                    <input type="email" class="form-control" placeholder="example@gmail.com" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email.
+                                    </div>
                                 </div>
                                 <div class="form-group last mb-3">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" placeholder="Your Password" id="password">
+                                    <input type="password" class="form-control" placeholder="Your Password" id="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a password.
+                                    </div>
                                 </div>
 
                                 <div class="form-group last mb-3">
                                     <label for="reppassword">Repeat Password</label>
-                                    <input type="password" class="form-control" placeholder="Re-enter your password" id="reppassword">
+                                    <input type="password" class="form-control" placeholder="Re-enter your password" id="reppassword" required>
+                                    <div class="invalid-feedback">
+                                        You need to repeat your password.
+                                    </div>
                                 </div>
                                 <p></p>
                                 <input type="submit" value="Sign Up" class="btn btn-block py-2 btn-primary">
@@ -72,6 +82,24 @@
     <script src="hoangson/login/js/popper.min.js"></script>
     <script src="hoangson/login/js/bootstrap.min.js"></script>
     <script src="hoangson/login/js/main.js"></script>
+    <script>
+        (function() {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
 </body>
 
 </html>
