@@ -15,25 +15,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="hoangson/userprofile/assets/css/material-dashboard.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        .invoice-title h2,
-        .invoice-title h3 {
-            display: inline-block;
+        .card {
+            margin-bottom: 1.5rem
         }
         
-        .table>tbody>tr>.no-line {
-            border-top: none;
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #c8ced3;
+            border-radius: .25rem
         }
         
-        .table>thead>tr>.no-line {
-            border-bottom: none;
+        .card-header:first-child {
+            border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0
         }
         
-        .table>tbody>tr>.thick-line {
-            border-top: 2px solid;
+        .card-header {
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: #f0f3f5;
+            border-bottom: 1px solid #c8ced3
         }
     </style>
 </head>
@@ -75,108 +88,122 @@
             </nav>
             <!-- End Navbar -->
             <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="invoice-title">
-                                <h2>Invoice</h2>
-                                <h3 class="pull-right">Order # 001</h3>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <address>
-                                    <strong>Billed To:</strong><br>
-                                        John Smith<br>
-                                        1234 Main<br>
-                                        Apt. 4B<br>
-                                        Springfield, ST 54321
-                                    </address>
+                <div class="container-fluid">
+                    <div id="ui-view" data-select2-id="ui-view">
+                        <div>
+                            <div class="card">
+                                <div class="card-header">Invoice For
+                                    <strong>#ORDER-007</strong>
+                                    <a class="btn btn-sm btn-secondary float-right mr-1 d-print-none" href="#" onclick="javascript:window.print();" data-abc="true">
+                                        <i class="fa fa-print"></i> Print</a>
+                                    <a class="btn btn-sm btn-info float-right mr-1 d-print-none" href="#" data-abc="true">
+                                        <i class="fa fa-save"></i> Save</a>
                                 </div>
-                                <div class="col-xs-6 text-right">
-                                    <address>
-                                    <strong>Shipped To:</strong><br>
-                                        Jane Smith<br>
-                                        1234 Main<br>
-                                        Apt. 4B<br>
-                                        Springfield, ST 54321
-                                    </address>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <address>
-                                        <strong>Payment Method:</strong><br>
-                                        Visa ending **** 4242<br>
-                                        jsmith@email.com
-                                    </address>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <address>
-                                        <strong>Order Date:</strong><br>
-                                        March 7, 2020<br><br>
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title"><strong>Order summary</strong></h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-condensed">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-sm-4">
+                                            <h6 class="mb-3">From:</h6>
+                                            <div>
+                                                <strong>Cambridge Hospital</strong>
+                                            </div>
+                                            <div>8 Ton That Thuyet, Tu Liem District</div>
+                                            <div>Hanoi City, Hanoi, zipcode 100000</div>
+                                            <div>Email: cambridgehospital@gmail.com</div>
+                                            <div>Phone: +24 7300 1866</div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6 class="mb-3">To:</h6>
+                                            <div>
+                                                <strong>Vu Van Vinh</strong>
+                                            </div>
+                                            <div>FPT University</div>
+                                            <div>Hanoi City, Hanoi, zipcode 100000</div>
+                                            <div>Email: vinh123@gmail.com</div>
+                                            <div>Phone: +84 0342378973</div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6 class="mb-3">Details:</h6>
+                                            <div>Invoice
+                                                <strong>#ORDER-007</strong>
+                                            </div>
+                                            <div>August 30, 2021</div>
+                                            <div>VAT: HNC09090390</div>
+                                            <div>Account Name: Cambridgehospital Inc</div>
+                                            <div>
+                                                <strong>SWIFT code: 99 8888 7777 6666 5555</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-striped">
                                             <thead>
                                                 <tr>
-                                                    <td><strong>Item</strong></td>
-                                                    <td class="text-center"><strong>Price</strong></td>
-                                                    <td class="text-center"><strong>Quantity</strong></td>
-                                                    <td class="text-right"><strong>Totals</strong></td>
+                                                    <th class="center">#</th>
+                                                    <th>Service</th>
+                                                    <th>Description</th>
+                                                    <th class="center">Price</th>
+                                                    <th class="right">Extra service</th>
+                                                    <th class="right">Total</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>BS-200</td>
-                                                    <td class="text-center">$10.99</td>
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-right">$10.99</td>
+                                                    <td class="center">1</td>
+                                                    <td class="left">Blood Test</td>
+                                                    <td class="left">Full set blood examination</td>
+                                                    <td class="center">$50</td>
+                                                    <td class="right">None</td>
+                                                    <td class="right">$50</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>BS-400</td>
-                                                    <td class="text-center">$20.00</td>
-                                                    <td class="text-center">3</td>
-                                                    <td class="text-right">$60.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BS-1000</td>
-                                                    <td class="text-center">$600.00</td>
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-right">$600.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="thick-line"></td>
-                                                    <td class="thick-line"></td>
-                                                    <td class="thick-line text-center"><strong>Subtotal</strong></td>
-                                                    <td class="thick-line text-right">$670.99</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="no-line"></td>
-                                                    <td class="no-line"></td>
-                                                    <td class="no-line text-center"><strong>Shipping</strong></td>
-                                                    <td class="no-line text-right">$15</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="no-line"></td>
-                                                    <td class="no-line"></td>
-                                                    <td class="no-line text-center"><strong>Total</strong></td>
-                                                    <td class="no-line text-right">$685.99</td>
+                                                    <td class="center">1</td>
+                                                    <td class="left">Bad blood Surgery</td>
+                                                    <td class="left">Full Surgery to remove bad blood from patient's body.</td>
+                                                    <td class="center">$200</td>
+                                                    <td class="right">$30 (3 days Hospital stay)</td>
+                                                    <td class="right">$230</td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-5">Status:
+                                            <t style="color: red; font-weight: bold; font-size: 16px;">UNPAID</t>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-5 ml-auto">
+                                            <table class="table table-clear">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left">
+                                                            <strong>Subtotal</strong>
+                                                        </td>
+                                                        <td class="right">$150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">
+                                                            <strong>Discount (15%)</strong>
+                                                        </td>
+                                                        <td class="right">$42</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">
+                                                            <strong>VAT (5%)</strong>
+                                                        </td>
+                                                        <td class="right">$14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">
+                                                            <strong>Total</strong>
+                                                        </td>
+                                                        <td class="right">
+                                                            <strong>$252</strong>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a class="btn btn-success" href="#" data-abc="true">
+                                                <i class="fa fa-usd"></i> Proceed to Payment</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
